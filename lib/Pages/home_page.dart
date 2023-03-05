@@ -33,20 +33,34 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               child: Column(children: [
                 SizedBox(height: 50),
+                Image.asset(
+                  "assets/images/sikka.png",
+                  width: screen_width * 0.5,
+                ),
                 Material(
                     color: Constants.color4,
                     borderRadius: BorderRadius.circular(12),
                     child: UiButton().rounded_button(
                         screen_width: screen_width * 0.35,
                         screen_height: screen_height * 0.09,
-                        radius: 12)),
+                        radius: 12,
+                        text: "SignUp")),
                 SizedBox(height: 50),
                 Material(
                   child: UiButton().rounded_button(
                       screen_width: screen_width * 0.35,
                       screen_height: screen_height * 0.09,
-                      radius: 1),
-                )
+                      radius: 1,
+                      text: "Login"),
+                ),
+                SizedBox(height: 50),
+                Material(
+                  child: UiButton().rounded_button(
+                      screen_width: screen_width * 0.35,
+                      screen_height: screen_height * 0.09,
+                      radius: 1,
+                      text: "hello"),
+                ),
               ]),
             )
           ],

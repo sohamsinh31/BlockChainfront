@@ -4,7 +4,7 @@ import 'package:velocity_x/velocity_x.dart';
 
 class UiButton {
   InkWell rounded_button(
-          {required double screen_width, required double screen_height,required double radius}) =>
+          {required double screen_width, required double screen_height,required double radius,required String text}) =>
       InkWell(
         onTap: () => {},
         child: AnimatedContainer(
@@ -23,6 +23,6 @@ class UiButton {
             width: screen_width,
             height: screen_height,
             alignment: Alignment.center,
-            child: "Login".text.xl3.extraBold.make()),
+            child: text.text.xl3.extraBold.make()),
       );
 }
