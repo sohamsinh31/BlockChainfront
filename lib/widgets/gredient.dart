@@ -12,16 +12,14 @@ class Gredientes {
     final isDarkMode = theme.brightness == Brightness.dark;
 
     return BoxDecoration(
-      gradient: RadialGradient(
+      gradient: LinearGradient(
         colors: [
-          Constants.lcolor1,
-          Constants.lcolor2,
-          Constants.lcolor5,
-          Colors.white,
+          Constants.common2,
+          Constants.common1,
         ],
-        center: const FractionalOffset(0.0, 0.0),
-        focal: const FractionalOffset(1.0, 0.0),
-        radius: 2,
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        // radius: 2,
         tileMode: TileMode.clamp,
       ),
     );

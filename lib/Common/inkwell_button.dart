@@ -12,9 +12,8 @@ class UiButton {
                 borderRadius: BorderRadius.circular(radius),
                 gradient: LinearGradient(
                     colors: [
-                      // Constants.color1,
-                      Constants.lcolor8,
-                      Constants.lcolor9,
+                      Constants.common3,
+                      Constants.common4,
                     ],
                     begin: const FractionalOffset(0.0, 0.0),
                     end: const FractionalOffset(1.0, 0.0),

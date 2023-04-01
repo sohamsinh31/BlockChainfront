@@ -25,7 +25,6 @@ class _HomePageState extends State<HomePage> {
     double screen_height = MediaQuery.of(context).size.height;
     print(Constants.isDarkMode);
     return Scaffold(
-      appBar: BaseAppBar(appBar: AppBar()),
       body: Container(
         decoration: Gredientes.getBoxDecoration(context),
         child: Row(
@@ -36,6 +35,7 @@ class _HomePageState extends State<HomePage> {
                 Image.asset(
                   "assets/images/sikka.png",
                   width: screen_width * 0.5,
+                  height: screen_height * 0.3,
                 ),
                 Material(
                     color: Constants.color4,
@@ -66,7 +66,6 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      drawer: MyDrawer(username: widget.username),
     );
   }
 }
